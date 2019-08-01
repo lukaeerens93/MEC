@@ -1,7 +1,7 @@
 # MEC
 
 ### Where this all fits in the field of robotics:
-[](images/RoboticsScope.jpg)
+![](images/RoboticsScope.jpg)
 
 
 ### This allows you to:
