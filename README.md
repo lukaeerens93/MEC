@@ -3,6 +3,10 @@
 ### Where this all fits in the field of robotics:
 ![](images/RoboticsScope.jpg)
 
+### Mathematical Requirements:
+- Linear Algebra
+- Calculus
+
 
 ### This allows you to:
 
