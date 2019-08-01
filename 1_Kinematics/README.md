@@ -16,6 +16,7 @@ Example of code:
 import numpy.cos as cos
 import numpy.sin as sin
 import numpy.pi as pi
+import numpy.dot as dot
 
 # degrees
 t1 = 0  # theta1
@@ -25,13 +26,15 @@ t2 = 0  # theta2
 t1 = float(t1)*pi/180 
 t2 = float(t2)*pi/180
 
-# Rotation about the Z-axis
+# Rotation about the Z-axis for joint1
 H0_1 = [[cos(t1), -sin(t1), 0],
         [sin(t1),  cos(t1), 0],
         [  0,       0,      1]]
         
-# Rotation about the Y-axis
+# Rotation about the Z-axis for joint2
 H1_2 = [[cos(t2), -sin(t2), 0],
         [sin(t2),  cos(t2), 0],
         [  0,       0,      1]]
+        
+H0_2 = dot(H0_1, H1,2)
 ```
