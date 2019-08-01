@@ -1,6 +1,16 @@
 # MEC
 
-This allows you to:
+### Where this all fits in the field of robotics:
+[](images/RoboticsScope.jpg)
+
+
+### This allows you to:
+
+#### In regular english:
+- Apply methods and ideas for robotic manipulation, state estimation, control 
+
+
+#### More specifically:
 - Simulate and analyze dynamic behavior of physical systems through ODE and difference equations.
 - Derive transfer function representation of linear systems from ODE and difference equations using Laplace and z transforms.
 - Predict qualitative and quantitative behavior of continuous and discrete time linear systems by examining transfer function poles.
