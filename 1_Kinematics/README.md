@@ -8,8 +8,8 @@ Conventions:
 The end effector position and orientiation is determined by:
 1) Defining frames for each joint (where Z axis of frame = axis of rotation of joint)
 2) Computing homogenous transformation matrices (rotation and displacement) from one frame to next
-  i) Case 1: To find transformation from the frame of reference of previous frame, multiply matrix to the right
-  ii) Case 2: To find transformatino from the global original frame of reference, multiply matrix to the left
+  - i) Case 1: To find transformation from the frame of reference of previous frame, multiply matrix to the right
+  - ii) Case 2: To find transformatino from the global original frame of reference, multiply matrix to the left
 
 Example of code:
 ```
@@ -36,5 +36,5 @@ H1_2 = [[cos(t2), -sin(t2), 0],
         [sin(t2),  cos(t2), 0],
         [  0,       0,      1]]
         
-H0_2 = dot(H0_1, H1,2)
+H0_2 = np.matrix(dot(H0_1, H1,2))
 ```
